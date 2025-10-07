@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>A Special Letter</title>
+  <style>
+    body {
+      margin: 0;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      font-family: 'Comic Sans MS', cursive, sans-serif;
+      background: radial-gradient(circle at top, #111, #000);
+      color: #fff;
+      text-align: center;
+      overflow: hidden;
+      padding: 20px;
+    }
+
+    h1 {
+      font-size: 36px;
+      margin-bottom: 10px;
+      background: linear-gradient(90deg, #ff0080, #8e2de2);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      animation: fadeIn 2s ease;
+    }
+
+    p.subtitle {
+      font-size: 18px;
+      margin-bottom: 30px;
+      color: #ddd;
+      animation: fadeIn 2s ease 0.5s forwards;
+    }
+
+    /* Letter card */
+    .letter {
+      width: 90%;
+      max-width: 480px;
+      background: linear-gradient(180deg, #ffe0f0, #ffcce6);
+      border-radius: 20px;
+      box-shadow: 0 0 25px rgba(255, 0, 128, 0.6);
+      padding: 25px 25px 35px;
+      text-align: left;
+      color: #333;
+      font-size: 16px;
+      line-height: 1.5;
+      opacity: 0;
+      transform: scaleY(0);
+      transform-origin: top;
+      animation: openLetter 1.5s ease forwards;
+      animation-delay: 1s;
+      position: relative;
+      overflow-y: auto;
+      max-height: 70vh;
+    }
+
+    /* Scrollbar Styling */
+    .letter::-webkit-scrollbar {
+      width: 6px;
+    }
+    .letter::-webkit-scrollbar-thumb {
+      background: #ff69b4;
+      border-radius: 10px;
+    }
+
+    /* Letter opening animation */
+    @keyframes openLetter {
+      from { transform: scaleY(0); opacity: 0; }
+      to { transform: scaleY(1); opacity: 1; }
+    }
+
+    /* Typing effect */
+    .typing {
+      border-right: 2px solid #ff0080;
+      white-space: pre-wrap;
+      overflow: hidden;
+      display: inline-block;
+      animation: typing 12s steps(120, end) forwards, blink 0.7s infinite;
+      word-break: break-word;
+    }
+
+    @keyframes typing {
+      from { width: 0 }
+      to { width: 100% }
+    }
+
+    @keyframes blink {
+      50% { border-color: transparent }
+    }
+
+    /* Fade-in */
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    /* Decorative hearts */
+    .heart {
+      position: absolute;
+      font-size: 22px;
+      color: #ff0066;
+    }
+    .top-left { top: 8px; left: 12px; }
+    .top-right { top: 8px; right: 12px; }
+    .bottom-left { bottom: 8px; left: 12px; }
+    .bottom-right { bottom: 8px; right: 12px; }
+
+    @media (max-width: 600px) {
+      h1 { font-size: 28px; }
+      p.subtitle { font-size: 16px; }
+      .letter { font-size: 15px; padding: 20px; }
+    }
+  </style>
+</head>
+<body>
+  <h1>A Special Letter For My Madam jee</h1>
+  <p class="subtitle">Just for you, on your special day 💌</p>
+
+  <div class="letter">
+    <div class="heart top-left">✨</div>
+    <div class="heart top-right">❤️</div>
+    <div class="heart bottom-left">💖</div>
+    <div class="heart bottom-right">✨</div>
+
+    <div class="typing">
+My Dearest Madam Jii,  
+
+💞 My Beautiful Rameesha 💞 
+💞 Happy Birthday My Love 💞
+
+Happy Birthday to most favourite person of my life ❤️
+
+Mujhe nahi pata kaha se start karun, lekin dil me bohot saari baatein hain.
+Yeh din sirf tumhare liye hai — enjoy karo aur apni life ke best moments feel karo.
+
+ Aaj ka din utna hi khoobsurat hai jitni tum ho, Rameesha.  
+Shayad hum door hain, par dil ke beech ek lamha ka bhi faasla nahi.  
+Tum meri zindagi ki wo ehsaas ho jise distance bhi kam nahi kar sakta. 
+
+Main tumhara shukriya ada karta hoon ke tum meri life me aee,
+thank you for your love and support,
+meri kamiyaan accept karne ke liye aur mujhe samajhne ke liye.
+
+Main hamesha is din ka wait karta hoon taake tumhe special feel kara sakun,
+aur tumhe aur zyada happy bana sakun.
+&nbsp;&nbsp;&nbsp;Tum meri life ka sabse beautiful part ho 💖
+
+Tum mery leay wo insan  ho jisse main apni har baat share kar sakta hoon,
+jo mujhe bina samjhaaye samajh leti ho,
+aur jiske saath main dil khol ke hans sakta hoon.
+
+Main promise karta hoon ke har ache aur bure waqt me tumhare saath rahunga.
+I love you so much ❤️
+
+Hum chahe dor  hain,
+lekin tumhare bina sab kuch adhoora lagta hai.
+Main khush hoon ke meri life me tum jaise insaan hy,
+jiske saamne main apni har baat bina dare keh sakta hoon.
+
+Tum meri life ki wo wajah ho jisne sab kuch badal diya.
+Meri zid, meri khushi, meri madness — sab me tum mere saath rahi ho.
+
+Bas dua hai ke tumhari zindagi hamesha khushiyon, sukoon aur mohabbat se bhari rahe. 💐 
+
+Aur Rameesha…  
+Thank you meri zindagi mein aane ke liye,  
+mujhe wo ehsaas dene ke liye jo main kabhi kisi aur ke saath mehsoos nahi kar saka.  
+Tumne meri duniya ko aur bhi khoobsurat bana diya hai. 💞  
+
+Happy Birthday once again, My Rameesha! 🎉  
+Main tumhe hamesha isi tarah pyaar karta rahunga —  
+sukoon se, sachchai se, aur poore dil se.  
+
+Forever Yours,  
+— Faseeh 💫
+    </div>
+  </div>
+</body>
+</html>

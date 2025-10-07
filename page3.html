@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Page 3</title>
+  <style>
+    body {
+      margin: 0;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      font-family: 'Comic Sans MS', cursive, sans-serif;
+      background: radial-gradient(circle at top, #111, #000);
+      color: #fff;
+      text-align: center;
+      overflow: hidden;
+    }
+
+    /* Cake Animation */
+    .cake {
+      font-size: 100px;
+      animation: slideDown 2s ease forwards;
+      opacity: 0;
+    }
+    @keyframes slideDown {
+      0% { transform: translateY(-200px); opacity: 0; }
+      100% { transform: translateY(0); opacity: 1; }
+    }
+
+    h1 {
+      margin: 20px 0 5px;
+      font-size: 40px;
+      color: #c77dff;
+    }
+    h2 {
+      margin: 0;
+      font-size: 26px;
+      color: #ff4d88;
+    }
+    p {
+      font-size: 16px;
+      margin: 10px 0;
+      color: #ddd;
+    }
+
+    /* Button */
+    .moments-btn {
+      margin-top: 30px;
+      padding: 15px 40px;
+      font-size: 18px;
+      background: linear-gradient(90deg, #ff0080, #8e2de2);
+      color: white;
+      border: none;
+      border-radius: 30px;
+      cursor: pointer;
+      transition: 0.3s;
+      font-weight: bold;
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .moments-btn:hover {
+      transform: scale(1.05);
+      background: linear-gradient(90deg, #8e2de2, #ff0080);
+    }
+
+    /* Balloons */
+    .balloons {
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+    }
+    .balloon {
+      width: 60px;
+      height: 80px;
+      border-radius: 50%;
+      background: red;
+    }
+    .blue { background: #0099ff; }
+    .green { background: #00cc66; }
+    .yellow { background: #ffcc00; }
+    .pink { background: #ff66cc; }
+  </style>
+</head>
+<body>
+  <!-- Cake -->
+  <div class="cake">🎂</div>
+
+  <!-- Text -->
+  <h1>Happy Birthday</h1>
+  <h2>Madam Jii ❤️</h2>
+  <p>🎉 It’s your special day! 🎉</p>
+
+  <!-- Button -->
+  <a href="./page4.html">
+    <button class="moments-btn">See Our Moments →</button>
+  </a>
+
+  <!-- Balloons -->
+  <div class="balloons">
+    <div class="balloon blue"></div>
+    <div class="balloon green"></div>
+    <div class="balloon yellow"></div>
+    <div class="balloon pink"></div>
+  </div>
+</body>
+</html>

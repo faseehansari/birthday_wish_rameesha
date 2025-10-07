@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Page 1</title>
+  <style>
+    body {
+      margin: 0;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      font-family: 'Comic Sans MS', cursive, sans-serif;
+      background: linear-gradient(135deg, #2c2c2c, #111);
+      color: #fff;
+      text-align: center;
+    }
+
+    /* Heart */
+    .heart {
+      width: 100px;
+      height: 100px;
+      background: red;
+      position: relative;
+      transform: rotate(-45deg);
+      animation: heartbeat 1s infinite;
+    }
+    .heart::before,
+    .heart::after {
+      content: "";
+      width: 100px;
+      height: 100px;
+      background: red;
+      border-radius: 50%;
+      position: absolute;
+    }
+    .heart::before {
+      top: -50px;
+      left: 0;
+    }
+    .heart::after {
+      left: 50px;
+      top: 0;
+    }
+
+    @keyframes heartbeat {
+      0%, 40%, 80%, 100% {
+        transform: scale(1) rotate(-45deg);
+      }
+      20%, 60% {
+        transform: scale(1.2) rotate(-45deg);
+      }
+    }
+
+    /* Text */
+    h2 {
+      margin-top: 20px;
+      font-size: 28px;
+      color: #ff66cc;
+    }
+    p {
+      font-size: 16px;
+      color: #bbb;
+    }
+
+    /* Button */
+    .next-btn {
+      margin-top: 30px;
+      padding: 12px 25px;
+      font-size: 18px;
+      background: #ff66cc;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+    .next-btn:hover {
+      background: #ff3399;
+    }
+  </style>
+</head>
+<body>
+  <div class="heart"></div>
+  <h2>Preparing Something Special</h2>
+  <p>For someone very special...</p>
+  <a href="./page2.html"><button class="next-btn">Next</button></a>
+</body>
+</html>

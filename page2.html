@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Page 2</title>
+  <style>
+    body {
+      margin: 0;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      font-family: 'Comic Sans MS', cursive, sans-serif;
+      background: pink; /* Pink background */
+      color: #fff;
+      text-align: center;
+      overflow: hidden;
+      position: relative;
+    }
+
+    /* Floating hearts animation */
+    .heart {
+      position: absolute;
+      font-size: 24px;
+      color: red;
+      animation: floatUp 6s linear infinite;
+      opacity: 0.8;
+    }
+
+    @keyframes floatUp {
+      0% {
+        transform: translateY(100vh) scale(1);
+        opacity: 1;
+      }
+      100% {
+        transform: translateY(-10vh) scale(1.5);
+        opacity: 0;
+      }
+    }
+
+    /* Gift circle */
+    .gift {
+      width: 120px;
+      height: 120px;
+      background: linear-gradient(135deg, #ff0099, #7700ff);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 50px;
+      animation: bounce 2s infinite;
+      z-index: 1;
+    }
+    @keyframes bounce {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-15px); }
+    }
+
+    h1 {
+      margin: 20px 0 10px;
+      font-size: 36px;
+      color: #ff0066;
+      z-index: 1;
+    }
+    p {
+      font-size: 16px;
+      margin: 5px 0;
+      color: #fff;
+      z-index: 1;
+    }
+
+    /* Celebrate Button */
+    .celebrate-btn {
+      margin-top: 30px;
+      padding: 15px 35px;
+      font-size: 18px;
+      background: linear-gradient(90deg, #ff0080, #8e2de2);
+      color: white;
+      border: none;
+      border-radius: 30px;
+      cursor: pointer;
+      transition: 0.3s;
+      font-weight: bold;
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      text-decoration: none;
+      z-index: 1;
+    }
+    .celebrate-btn:hover {
+      transform: scale(1.05);
+      background: linear-gradient(90deg, #8e2de2, #ff0080);
+    }
+
+    small {
+      margin-top: 15px;
+      display: block;
+      font-size: 14px;
+      color: #fff;
+      z-index: 1;
+    }
+  </style>
+</head>
+<body>
+  <!-- Floating Hearts (multiple copies for effect) -->
+  <div class="heart" style="left:10%; animation-delay:0s;">❤️</div>
+  <div class="heart" style="left:25%; animation-delay:1s;">💖</div>
+  <div class="heart" style="left:40%; animation-delay:2s;">❤️</div>
+  <div class="heart" style="left:60%; animation-delay:3s;">💖</div>
+  <div class="heart" style="left:80%; animation-delay:4s;">❤️</div>
+  <div class="heart" style="left:90%; animation-delay:5s;">💖</div>
+
+  <!-- Gift icon -->
+  <div class="gift">🎁</div>
+
+  <!-- Text -->
+  <h1>Time to Celebrate!</h1>
+  <p>The countdown is over... Let's celebrate! 🎉</p>
+
+  <!-- Button (link to next page) -->
+  <a href="page3.html" class="celebrate-btn">🎁 Let's Celebrate! ✨</a>
+
+  <!-- Bottom note -->
+  <small>Click to start the magic! ✨</small>
+</body>
+</html>

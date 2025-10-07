@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Page 5</title>
+  <style>
+    body {
+      margin: 0;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      font-family: 'Comic Sans MS', cursive, sans-serif;
+      background: radial-gradient(circle at top, #111, #000);
+      color: #fff;
+      text-align: center;
+      overflow: hidden;
+      animation: slideDown 1.5s ease forwards;
+    }
+
+    /* Page entry animation */
+    @keyframes slideDown {
+      from { transform: translateY(-100%); opacity: 0; }
+      to { transform: translateY(0); opacity: 1; }
+    }
+
+    h1 {
+      font-size: 34px;
+      margin-bottom: 10px;
+      background: linear-gradient(90deg, #ff0080, #8e2de2);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    p {
+      font-size: 18px;
+      margin-bottom: 30px;
+      color: #ddd;
+    }
+
+    /* Letter card */
+    .letter-card {
+      width: 280px;
+      height: 180px;
+      background: linear-gradient(180deg, #ffe0f0, #ffcce6);
+      border-radius: 20px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      box-shadow: 0 0 15px rgba(255, 0, 128, 0.5);
+      cursor: pointer;
+      transition: transform 0.3s ease;
+    }
+    .letter-card:hover {
+      transform: scale(1.05);
+    }
+
+    .envelope {
+      font-size: 50px;
+      color: #ff0080;
+      margin-bottom: 15px;
+    }
+    .open-text {
+      font-size: 16px;
+      color: #b3005f;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <!-- Heading -->
+  <h1>A Special Letter</h1>
+  <p>Just for you, on your special day 💌</p>
+
+  <!-- Letter card -->
+  <a href="./page6.html">
+    <div class="letter-card">
+      <div class="envelope">✉️</div>
+      <div class="open-text">Click to open</div>
+    </div>
+  </a>
+</body>
+</html>
